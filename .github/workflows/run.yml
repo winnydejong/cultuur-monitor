@@ -12,6 +12,8 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - uses: actions/setup-python@v4
+              with:
+                python-version: 'pypy3.9'
             - run: python start.py > data.json
             - run: |-
                   git config user.name 'GitHub Actions'

@@ -26,4 +26,4 @@ conn.request("GET", "/over-ons/publicaties", headers=headers)
 res = conn.getresponse()
 data = res.read()
 
-print(data.decode("utf-8"))
+print(data.decode("utf-8", errors="ïgnore"))
